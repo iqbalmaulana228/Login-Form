@@ -1,0 +1,61 @@
+
+/* Box Styling */
+.box{
+    background-color: rgb(162, 225, 255);
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    padding-top: 50px;
+    border-radius: 10px;
+    border: solid 2px;
+   box-shadow: 14px 8px 41px -4px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 14px 8px 41px -4px rgba(0,0,0,0.59);
+    -moz-box-shadow: 14px 8px 41px -4px rgba(0,0,0,0.59);
+    text-align: center;
+}
+.container-1{
+    margin-left: 23px;
+}
+
+
+
+
+/*styling button and form*/
+div.button-login, div.button-register{
+    width: 200px;
+    height: 15px;
+    background-color: rgb(1, 81, 112);
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: smaller;
+}
+.button-login{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.button-register{
+    margin-left: 80px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+input{
+    width: 350px;
+    height: 25px;
+}
+input#username{
+    margin-bottom: 10px;
+}
+.button-login:hover{
+    background-color: skyblue;
+    color: white;
+}
+.button-register:hover{
+    background-color: skyblue;
+    color: white;
+}
+

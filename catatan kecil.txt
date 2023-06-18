@@ -1,0 +1,7 @@
+HTML, CSS INLINE ATTRIBUTE USING "Style"
+
+bacground-color = mengganti warna background
+color:value = biasanya digunakan untuk mengganti warna teks
+font-family = biasanya digunakan untuk mengganti font pada html
+font-size = biasanya digunakan untuk merubah ukuran font
+text-align = digunakan untuk mengatur letak sebuah text secara horizontal
