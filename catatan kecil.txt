@@ -5,3 +5,79 @@ color:value = biasanya digunakan untuk mengganti warna teks
 font-family = biasanya digunakan untuk mengganti font pada html
 font-size = biasanya digunakan untuk merubah ukuran font
 text-align = digunakan untuk mengatur letak sebuah text secara horizontal
+
+===========================================CSS Inheritance======================================
+Value inherit digunakan ketika kita ingin styling sebuah element sama dengan element parent-nya.
+
+contoh kasus:
+Diketahui sebuah element body memiliki child element berupa anchor <a>.
+
+Body ingin di styling menggunakan warna gray, namun child element berupa <a> warna nya tidak ikut berubah,
+maka kita harus menggunakan value inherit pada child element untuk merubah warna yang sama seperti parent element.
+a {
+     color: inherit;
+}
+
+==============================----CSS Specificity { VERY IMPORTANT }--------===========================================
+
+"Setiap deklarasi css (selector) memiliki berat yang berbeda, Berat tersebut menentukan seberapa spesifik sebuah element dapat dipilih oleh selector"
+
+element yang memiliki atribut yang spesifik memiliki nilai yang lebih Berat dibandingkan dengan yang tidak memiliki sebuah atribut
+
+contoh:
+
+#p1 {
+        color: green;
+}
+
+p {
+        color: red;
+}
+dapat dilihat bahwa deklarasi pertama merupakan sebuah atribut id, yang mana menandakan specificity dari sebuah element, sedangkan deklarasi dibawahnya tidak memiliki specificity. hal ini menandakan bahwa sebuah deklarasi yang diberikan spesifik dari sebuah element memiliki nilai yang lebih berat. 
+
+
+Contoh2: 
+ul#sarapan li{                               
+    color: green;
+
+}
+
+ul#sarapan li.favorit {                 <------ Deklarasi lebih spesifik untuk mengubah warna sebuah class didalam sebuah id 
+    color: red;
+}
+
+LEBIH SPESIFIK LEBIH BERAT.
+============================================================================================================================
+ CSS LAYOUTING
+
+
+Adalah proses untuk mengatur elemen elemen yang sudah kita buat menggunakan HTML menggunakan sintaks CSS,  Contohnya ukuran, posisi dan perilaku sebuah elemen.
+
+Tag
+Tag pada HTML digunakan untuk memberikan 'maksud' / 'arti' pada sebuah dokumen. contohnya <p> untuk menandakan sebuah paragraf, <h1> untuk menandakan heading pada text dengan ukuran (1 = paling besar).
+
+<div> , <span>
+
+Div erupakan sebuah tag pembungkus elemen elemen, biasanya digunakan untuk mengelompokan  bagian bagian sebuah website.
+Sedangkan span merupakan element untuk membungkus bagian bagian pada sebuah text atau tag kecil
+
+
+
+
+contoh penggunaan div untuk mengelompokan bagian header pada website
+
+<div class="header">        <----- class header menandakan bahwa div tersebut dikelompokan sebagai sebuah header pada web
+
+
+</div>
+
+
+=========================HTML BEHAVIUOUR===================================
+
+
+INLINE Elemen
+
+- Element yang secara default tidak menambahkan garis baru\
+- Lebar dan tinggi elemen nya sebesar konten yang ada didalamnya
+- Kita tidak dapat mengatur tinggi dan lebar dari element inline
+- Margin dan padding hanya mempengarusi elemen secara horizontal tidak vertikal
